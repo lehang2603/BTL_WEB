@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.top-main {
+    padding: 5px 0px;
+    background-color:white; 
+  }
+
+  .top-main .bars {
+    background-color:#FFF0F0; 
+  }
+  .top-main .bars .menu{
+   display: flex;
+   padding:10px 0px;
+   font-size: 26px;
+   margin: 10px 0px -5px 0px;
+}
+.top-main .bars .list {
+  font-size: 21px;
+} 
+  .top-main .bars ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .top-main .bars ul li {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif;
+    line-height: 2.4;
+   
+  }
+  
+  .top-main .bars ul li a {
+    transition: all 0.2s linear;
+    text-decoration: none;
+    color: black; 
+  }
+  
+  .top-main .bars ul li a:hover {
+    color:#648977;
+    text-decoration:underline;
+  }
+
+  /* SLIDER */
+  .slider {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    background-color:#884648;
+}
+
+.slider-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.slider-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px;
+    display: flex;
+    transition: 1s ease-in-out;
+    height: 450px;
+}
+
+
+.slider-img {
+  background-size: cover;
+    width: 1000px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+
+ 
+/* WHAT'S NEW */
+
+#wrapper .headline{
+    text-align: center;
+    margin: 25px 0px;
+}
+#wrapper h2{
+    font-size: 35px;
+    color: #D79BA1;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: "Just Another Hand", cursive;
+     font-weight: 400;
+    font-style: normal;
+}
+#wrapper .product{
+    padding: 10px 0px;
+    overflow: hidden;
+    
+}
+
+#wrapper .product img{
+    display: block;
+   max-width: 90%; 
+   height: 260px;
+   transition:all 0.3s ease-in-out;
+} 
+#wrapper .product img:hover{
+    transform:scale(1.1) ;
+}
+#wrapper .product .product-action{
+  padding: 10px 0px;
+}
+#wrapper .product .product-info{
+    padding: 10px 0px;
+}
+#wrapper .product .product-info >a{
+    text-decoration: none;
+}
+#wrapper .product .product-info >a.product-name{
+    color:#884648 ;
+    padding: 3px 0px;
+    font-weight: 700;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif ;
+    transition: all 0.3s linear;
+}
+#wrapper .product .product-info >a.product-name:hover{
+    color: #648977;
+}
+#wrapper .product .product-info .product-price{
+    color:#884648;
+    font-weight: 800;
+    padding: 8px 0px;
+    font-size: 25px;
+}
+
+
+
+.product-info .product-price {
+  display: flex;
+  align-items: center;
+}
+
+
+.product-info .product-price .product-action {
+  margin-left: 40px;
+}
+
+
+.product-action .add-to-cart {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: black;
+}
+
+
+.product-action .add-to-cart:hover {
+  color: #D79BA1; 
+}
+
+.product-action .add-to-cart i {
+    margin-right: 5px; 
+  }
+
+.product-action .add-to-cart:hover {
+    background-color: #D79BA1;
+    color: white;
+}

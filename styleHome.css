@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background:#D79BA1;
+}
+
+.header-top {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    color: black;
+    height: 48px;
+}
+
+.header-contact {
+    flex-basis: 40%;
+    display: flex;
+}
+
+.header-phone {
+    margin-right: 16px;
+}
+
+.header-phone i,
+.header-email i {
+    margin-right: 8px;
+}
+
+.header-search {
+    flex-basis: 35%;
+    padding: 2px 10px;
+}
+
+.header-search-box {
+    width: 100%;
+    height: 36px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 18px;
+    display: flex;
+    overflow: hidden;
+}
+
+.search-control {
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    padding: 0 12px;
+    font-size: 15px;
+}
+
+.search-control::placeholder {
+    color: #000;
+}
+
+.search-control:focus-visible {
+    outline: none;
+}
+
+.search-btn {
+    width: 10%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000;
+}
+
+.header-user {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.header-user-icon {
+    margin-right: 8px;
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+.header-user-control a{
+    text-decoration: none;
+    color:#000;
+}
+
+.header-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.header-bottom-main {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.header-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.header-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-menu-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-item-link {
+    height: 30px;
+    display: block;
+    padding: 0 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-right: 1px solid #000;
+    font-weight: bold;
+    color: #000;
+}
+
+.menu-item:last-child a {
+    border-right: none;
+}
+
+--menu--
+.content{
+    margin: 0;
+    padding: 0;
+}
+
+.title-heading .h2 {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size:30px;
+    margin-top: 50px;
+}
+
+.title-heading .h2::before,
+.title-heading .h2::after {
+    content: "";
+    position: absolute;
+    width: 100px; 
+    height: 1px;
+    background: #8c8c8c;
+    transform: translateY(-50%);
+    margin-top: 20px;
+}
+
+.title-heading .h2::before {
+    left: 320px; 
+}
+
+.title-heading .h2::after {
+    right: 320px; 
+}
+
+.navtab {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.project .project-products {
+    display: flex;
+    flex-wrap: nowrap; /* Ngăn không cho các hộp xuống dòng khi không đủ không gian */
+}
+
+.project .section {
+    flex: 0 0 auto; /* Đảm bảo không co giãn */
+    width: calc(25% - 1rem); /* Độ rộng cố định cho mỗi hộp, với 1rem là khoảng cách giữa các hộp */
+    margin-right: 1rem; /* Khoảng cách giữa các hộp */
+}
+
+.box {
+    margin-bottom: 20px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.box .content {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.box h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0;
+    color:black;
+}
+
+.box p {
+    font-size: 14px;
+    color: #999;
+}
+
+
+--about Leaves---
+.about  {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background:rgba(255, 51, 153, .05);
+}
+.heading span {
+    color:#9c5e64;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    padding-bottom: 2rem;
+    flex-direction: row; /*Thay đổi hướng của flexbox thành hàng ngang  */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.about .row .img-container {
+    flex: 1 1 40rem;
+    position: relative;
+    max-width: 40%; 
+    
+}
+
+.about .row .img-container img {
+    width: 100%;
+    border: 0.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: auto;
+    object-fit: cover;
+    margin-left: 2rem;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+}
+
+
+.about .content h2{
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size:25px;
+}
+
+.about .content p {
+    margin-left: 2rem;
+    margin-right: 3rem;
+    font-family: Arial, sans-serif; 
+    font-size: 1rem; 
+}
+
+.btn{
+    margin-left: 2rem;
+    background-color:black;
+    color: #f9f9f9;
+}
+.btn:hover {
+    background-color:#9c5e64;/* Thay đổi màu nền khi di chuột qua */
+}
+
+
+/* review */
+
+.review{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.review .box-container{
+    display: flex;
+    justify-content: space-around;
+    gap:1.5rem;
+
+}
+
+.review .box-container .box{
+    flex: 1 1 10rem;
+    box-shadow: 0 .5rem rgba(0, 0, 0, .1);
+    border-radius: 5rem;
+    padding: 3rem 3rem;
+    position: relative;
+}
+.review .box-container .box .fa-quote-right{
+    margin-top: 1rem ;
+    position: absolute;
+    bottom: 2rem; right: 2rem;
+    font: #eee;
+
+}
+.review .box-container .box .stars i{
+    color: #F4B8BE;
+    font-size: 1rem;
+}
+.review .box-container .box p{
+    color: #999;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top:  2rem;
+}
+.review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+
+}
+
+.review .box-container .box .user img{
+    height: 4rem;
+    width: 4rem;
+    border-radius:  50%;
+    object-fit: cover;
+    margin-right: 1rem ;
+
+}
+.review .box-container .box .user h3{
+    font-size: 15px ;
+    font-weight: bold;
+    color: black;
+}
+.review .box-container .box .user span{
+    font-size: 0.9rem;
+    color: #999;
+}

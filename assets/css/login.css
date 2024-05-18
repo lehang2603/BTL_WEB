@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-login .col >h2{
+    padding: 1rem 0;
+    text-indent: -15px;
+    font-size: 15px;
+    color:black ;
+}
+.top-login h2 >a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+body .wrapper form {
+    background-color: rgba(255, 215, 215, 0.8); /* Ví dụ với màu đỏ (#FFD7D7) và độ trong suốt 0.5 */
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.form-heading{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-group{
+    border-bottom: 2px solid#060505;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.form-group i{
+    color: black;
+    font-size: 14px;
+    padding-top:5px ;
+    padding-right: 10px ;
+}
+.form-input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    flex-grow: 1;
+    
+}
+
+.wrapper button{
+    background: transparent;
+    color:black;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    margin-top: 15px;
+}
+button:hover {
+    background-color:white;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .container {
+    max-width: 500px; 
+    width: 100%; 
+    padding: 10px;  
+    box-sizing: border-box;
+}
+

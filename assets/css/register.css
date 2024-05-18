@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-register .col >h2{
+    padding: 1rem 0;
+    text-indent: -15px;
+    font-size: 15px;
+    color:black ;
+}
+.top-register h2 >a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+body .wrapper form{
+    background-color: #FFD7D7;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center; 
+}
+
+.wrapper .container {
+    max-width: 500px; 
+    width: 100%; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.wrapper .form-control {
+    margin-bottom: 14px; 
+}
+
+.wrapper button {
+    background: transparent;
+    color:black;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color:white;
+    
+}

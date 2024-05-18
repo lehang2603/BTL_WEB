@@ -1,0 +1,157 @@
+/* .top-make_up{
+    margin: 5px auto;
+    padding: 5px 0px;
+
+}
+.top-make_up .make_up{
+    padding: 10px 0px;
+}
+.top-make_up .make_up a{
+    text-decoration: none;
+    color:black;
+    font-family:"CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif ;
+}
+.top-make_up .make_up a:hover{
+    color: #648977;
+}
+.top-make_up #mu{
+    font-weight: 800;
+} */
+.make{
+  
+    padding-bottom: 10px ;
+    font-family: "Short Stack", cursive;
+}
+.make span{
+    font-weight: 900;
+    font-size: 32px;
+    color: #884648;
+    margin-left: 60px;
+}
+
+
+.arrange {
+    margin: 10px auto;
+    padding: 15px 0px;
+    text-align: right;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 99%;
+}
+
+.arrange select{
+   font-family:  "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif ;
+   color:#4A6958 ;
+   font-size: 16px;
+   letter-spacing: 0.5px;
+   cursor: pointer;
+   background-color: #FFD7D7;
+   border: 1px solid #FFD7D7;
+   border-radius: 5px;
+   box-shadow: 0 0 20px #a98193;
+   margin-right: 40px;
+}
+.arrange select::-ms-expand{
+    display: none;
+}
+.arrange select:hover{
+    border: 3px solid #F4B8BE;
+}
+.arrange option{
+    background-color: #FFD7D7;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.arrange .selected{
+    display: none;
+}
+
+
+
+
+
+ 
+ 
+.leftbox {
+    background-color: rgba(255, 215, 215, 0.5); /* Màu nền của leftbox */
+    padding: 20px;
+    width: 22%;
+    height: 350px;
+    box-shadow: 0 0 10px #a98193;
+    border-radius: 8px;
+   
+}
+
+.menu_lists {
+    list-style-type: none; 
+    padding: 10px;
+}
+
+.menu_lists li {
+    
+    line-height: 2;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.menu_lists li a {
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none; 
+    color: #333; 
+    display: block; 
+    padding: 5px;
+}
+.menu_lists li:not(:last-child) {
+    border-bottom: 1px solid #ccc; /* Gạch ngăn cách giữa các mục, trừ mục cuối cùng */
+}
+.menu_lists li a:hover {
+    color:#4e6b5b;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(100, 137, 119, 0.8); 
+   
+}
+
+
+.wrap .product{
+    padding: 10px 0px;
+    overflow: hidden;
+}
+.wrap .product .product-action{
+    padding: 10px 0px;
+}
+.wrap .product img{
+    display: block;
+   max-width: 90%; 
+   height: 290px;
+   transition:all 0.2s ease-in-out;
+   cursor: pointer;
+}
+.wrap .product img:hover{
+    transform:scale(1.1) ;
+    
+}
+.wrap .product .product-info{
+    padding: 20px 0px;
+}
+.wrap .product .product-info>a{
+    text-decoration: none;
+}
+.wrap .product .product-info>a.product-name{
+    color:#884648 ;
+    padding: 3px 0px;
+    font-weight: 700;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif ;
+    transition: all 0.3s linear;
+}
+.wrap .product .product-info>a.product-name:hover{
+    color: #050b08;
+}
+.wrap .product .product-info .product-price{
+    color:#884648;
+    font-weight: 800;
+    padding: 8px 0px;
+    font-size: 26px;
+}

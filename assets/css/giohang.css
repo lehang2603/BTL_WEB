@@ -1,0 +1,71 @@
+/* Thiết lập các thuộc tính cơ bản */
+
+.dinhdang {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Thiết kế cụ thể cho các cột */
+th:first-child, td:first-child {
+    width: 10%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 30%;
+}
+
+th:nth-child(3), td:nth-child(3), th:nth-child(5), td:nth-child(5) {
+    width: 15%;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 10%;
+}
+
+th:nth-child(6), td:nth-child(6) {
+    width: 20%;
+}
+
+/* Định dạng cho hàng tổng cộng */
+tr:last-child {
+    background-color: #f2f2f2;
+}
+
+tr:last-child td {
+    text-align: right;
+}
+
+/* Định dạng cho nút trong cột "Thao tác" */
+td:last-child button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+td:last-child button:hover {
+    background-color: #45a049;
+}

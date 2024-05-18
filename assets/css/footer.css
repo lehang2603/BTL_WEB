@@ -1,0 +1,40 @@
+footer{
+    font-size: 20px;
+    color: black;
+    line-height: 1.5;
+}
+.top-trademark{
+    background-color: #FFD7D7;
+    min-height: 70px;
+    
+}
+.wrap{
+    padding: 3px 0px;
+    margin: 0 auto ;
+}
+.top-trademark .brands_img{
+    max-width: 100%;
+    height: 90%;
+    display: flex;
+    /* padding: 5px; */
+    align-items: center;
+}
+/* Connect */
+.wrapp{
+    padding: 5px 0px;
+    margin: auto;
+}
+.wrapp .group .title, .wrapp .connect .title, .wrapp .policy .title{
+    color:black;
+    text-align: left;
+    font-weight: 600;
+    font-size: 24px;
+}
+.wrapp .group li, .wrapp .connect li, .wrapp .policy li{
+    list-style-type: none;
+}
+.wrapp .connect li a, .wrapp .policy li a{
+    text-decoration: none;
+    color: black;
+}
+

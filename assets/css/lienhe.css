@@ -1,0 +1,101 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  html {
+  overflow: hidden;
+} */
+body{
+  width: 100%;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif ;
+}
+.top-lienhe{
+    margin: 1px auto;
+    padding: 1px 0px;
+
+}
+.top-lienhe .make_up{
+    padding: 10px 0px;
+}
+.top-lienhe .make_up a{
+    text-decoration: none;
+    color:black;
+    font-family:"CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif ;
+}
+.top-lienhe .make_up a:hover{
+    color: #648977;
+}
+.top-lienhe #mu{
+    font-weight: 799;
+}
+
+ .top-hotro {
+  background-image: url('./assets/./bgnew.png');
+  background-size: cover;
+  position: relative;
+  color: black;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.top-hotro h1{
+  font-family: "Just Another Hand", cursive;
+  font-weight: 700;
+  font-size:30px ;
+}
+.form-group label {
+  color: black; 
+}
+.top-hotro a{
+  font-size:15.5px ;
+}
+
+.form-group input[type="submit"] {
+  background-color: white;
+  color: black; 
+}
+.form-group input[type="text"] {
+  background-color: white;
+  color: black; 
+}
+
+.top-hotro:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Màu nền có độ trong suốt */
+  z-index: -1; /* Đặt vị trí dưới phần tử khác */
+}
+
+ .top-hotro {
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif;
+    font-size: 15.5px;
+    line-height: 24px;
+    color:black;
+    text-align: left;
+    border-radius: 10px;
+    align-items: flex-start; 
+    padding: 10px;
+    flex-direction: column;
+}
+
+  .top-hotro button {
+      background: transparent;
+      color:black;
+      width: 100%;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+  }
+  
+  button:hover {
+      background-color:white;
+
+  }

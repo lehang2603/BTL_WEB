@@ -1,0 +1,267 @@
+
+/* /////////////////////////////////////////////////// */
+.header-mini-cart a {
+    color: #000;
+   
+}
+/* Cart
+.icon-cart {
+    display: flex;
+    position: relative;
+    top: 15px;
+    right: 0;
+    padding: 13px 15px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.icon-cart .item-numb{
+    font-size: 15px;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    background-color: #ffcccc;
+    border: 1px solid #ffb3b3;
+
+} */
+
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+.header-pay {
+    height: 5rem;
+    margin: 20px 0px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-pay ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.header-pay ul li {
+    list-style: none;
+}
+.header-pay ul li a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif;
+    text-transform: uppercase;
+}
+.header-pay ul li a:hover {
+    color: rgb(134, 90, 90);
+}
+.containe{
+    margin-top: 50px;
+}
+
+/* ////////////////////////////////////////////////// */
+.col-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-box {
+    width: 90%;
+    max-width: 500px; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.information1 {
+    margin-bottom: 20px;
+    text-align: center; 
+    margin-bottom: 40px; 
+    max-width: 600px;
+    font-weight: bold;
+    width: 100%;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700 !important;
+    color: #000;
+}
+.information{
+    margin-bottom: 15px;
+}
+.pay-name {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pay-name span {
+    color: red;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+
+/* ///////////////////////////////////// */
+.col-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.element {
+    width: 100%;
+    max-width: 650px; /* Điều chỉnh độ rộng tối đa của hộp */
+    border: 1px solid #ccc; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 600px;
+    font-weight: bold;
+    width: 50%;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700 !important;
+    color: #000;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.col-3 {
+    flex: 0 0 25%; /* Chiếm 25% chiều rộng */
+}
+
+.pic img {
+    max-width: 100%;
+    height: auto;
+}
+
+.col-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.col{
+    margin-top: 20px;
+}
+
+.name a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif;
+}
+
+.name a {
+    text-decoration: none;
+}
+
+.pay span {
+    font-size: 16px;
+    color: #cd6868;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+/* /////////////////////////////////////////////// */
+.right-box-pay {
+    max-width: 550px;
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif;
+    
+}
+
+.total {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.total span {
+    font-weight: bold;
+}
+
+.total a {
+    color: #884648;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.total a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 20px;
+}
+
+#orderButton {
+    padding: 10px 20px;
+    background-color: #a86d74;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#orderButton:hover {
+    background-color: #d79d9d; 
+}
+/* ///////////////////////////////////////// */
+.method{
+    width: 90%;
+    margin: 10px 0px 5px 75px;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif;
+    line-height: 28px;
+    color: #626060;
+    border-radius: 10px;
+}
+.payment{
+    text-align: center; 
+    max-width: 600px;
+    font-weight: bold;
+    width: 100%;
+    font-family: "CenturyGothic", "CenturyGothic-fallback", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700 !important;
+    color: #000;
+}

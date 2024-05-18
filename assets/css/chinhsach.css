@@ -1,0 +1,47 @@
+
+.top-chinhsach .col >h2{
+    padding: 1rem 0;
+    text-indent: -15px;
+    font-size: 15px;
+    color:black ;
+}
+.top-chinhsach h2 >a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.title-head{
+    font-size: 25px;
+    padding-left: 40px;
+}
+
+.vanchuyen-info{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.muahang-info{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.doitra-info{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.thanhtoan-info{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.kiemhang-info{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

@@ -11,14 +11,13 @@ body {
 
 .wrapper {
     width: 100%;
-
 }
 
 .header {
     width: 100%;
     display: flex;
     justify-content: center;
-    background:#D79BA1;
+    background: #D79BA1;
 }
 
 .header-top {
@@ -87,30 +86,32 @@ body {
     flex-basis: 20%;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .header-user-icon {
     margin-right: 8px;
     font-size: 22px;
     margin-left: 8px;
+    cursor: pointer;
 }
 
-.header-user-control a{
+.header-user-control a {
     text-decoration: none;
-    color:#000;
+    color: #000;
 }
+
 .header-sign-in,
 .header-sign-up {
-    text-decoration: none; 
-    color: #333; 
-    transition: color 0.3s; 
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
 }
 
 .header-sign-in:hover,
 .header-sign-up:hover {
-    color:#648977; 
+    color: #648977;
 }
-
 
 .header-bottom {
     width: 100%;
@@ -159,6 +160,7 @@ body {
     color: #000;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .menu-item-link:hover {
     color: #648977;
     background-color: #D79BA1;
@@ -168,55 +170,43 @@ body {
 .menu-item:last-child a {
     border-right: none;
 }
-/*---------------------------------------*/
-/* .header-mini-cart{
-    
-    padding-left: 16px;
 
-    cursor: pointer;
-}
-.header_cart-wrap{
+.header-user {
     position: relative;
-    display: inline-block;
-    padding: 0 8px;
-    cursor: pointer;
 }
 
-.header_cart-wrap:hover .header-cart-list{
- display: block;
+.dropdown-menu {
+    display: none; /* Ẩn menu thả xuống theo mặc định */
+    position: absolute;
+    top: 120%; /* Đặt menu thả xuống dưới biểu tượng và thêm khoảng cách */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
 }
 
-.header-cart-list{
-    position: absolute;
-    top: calc(100% + 10px);
-    right: -5px;
-    background-color:white ;
-    width: 300px;
-    border-radius: 2px;
-    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
-    display: none;  
-    animation: fadeIn ease-in 0.2s;
+.dropdown-menu.show {
+    display: block; /* Hiển thị menu thả xuống khi có lớp 'show' */
 }
-.header-cart-list::after{
-    content: "";
-    position: absolute;
-    right: -1px;
-    top: -26px;
-    border-width: 16px 20px ;
-    border-style: solid;
-    border-color: transparent transparent white transparent;
-}
-.header-cart-no-cart-img{
-    width: 150px;
+
+.dropdown-item {
+    padding: 8px 16px;
+    text-decoration: none;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
+    color: #333;
 }
-.header-cart-list--no-cart{
-    padding: 15px 0;
-} */
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-divider {
+    height: 1px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    background-color: #e9ecef;
+}
 .header-mini-cart a {
     color: #000;
     padding:-10px;

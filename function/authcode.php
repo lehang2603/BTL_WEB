@@ -1,22 +1,21 @@
 <?php
 // session_start();
-require_once('../connection.php');
-require_once('../helper.php');
+include('../config/dbcon.php');
 
     if(isset($_POST['register_btn'])){
-       var_dump($_POST);
+      
         $name= mysqli_real_escape_string($con,$_POST['name']);
         $email= mysqli_real_escape_string($con,$_POST['email']);
         $phone= mysqli_real_escape_string($con,$_POST['phone']);
         $password= mysqli_real_escape_string($con,$_POST['password']);
         $cpassword= mysqli_real_escape_string($con,$_POST['cpassword']);
-        // check if email already registered
+        // // check if email already registered
         $check_email_query="SELECT email FROM customers WHERE email='$email'";
         $check_email_query_run=mysqli_query($con,$check_email_query );
         if( mysqli_num_rows( $check_email_query_run)>0)
         {
             $_SESSION['message']="Email already registered";
-            header('Location: ../register.php');
+            header('Location: ../view/register.php');
         }
         else
         {
@@ -26,19 +25,19 @@ require_once('../helper.php');
                 $insert_query_run= mysqli_query($con, $insert_query );
                 if($insert_query_run){
                     $_SESSION['message']="Registered Successfullly";
-                    header('Location: ../login.php');
+                    header('Location: ../view/login.php');
                 }
                 else{
                     $_SESSION['message']="Something went wrong";
-                    header('Location: ../register.php');
+                    header('Location:../view/register.php');
                 }
             }
             else{
                 $_SESSION['message']="Password do not match";
-                header('Location: ../register.php');
+                header('Location: ../view/register.php');
             }
         }
-    }
+   }
     else if(isset($_POST['login_btn']))
     {
         $email = mysqli_real_escape_string($con,$_POST['email']);
@@ -62,9 +61,11 @@ require_once('../helper.php');
         }
         else
         {
-            // redirect("../login.php","Invalid Creadentials");
-
+            //redirect("../login.php","Invalid Creadentials");
+            $_SESSION['message']="Invalid Credentials";
+            header('Location : ../view/register.php');
         }
-    }
-   
+    
+    // }
+}
 ?>

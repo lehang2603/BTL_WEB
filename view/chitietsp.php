@@ -124,9 +124,9 @@
             <div class="name">
                 GIỚI THIỆU SẢN PHẨM <br>
             </div>
-            <div class="picture">
+            <!-- <div class="picture">
                 <img src="./assets/./pic/./pic_chitietsp/intro3.png" alt="intro3" >
-            </div>
+            </div> -->
             <div class="detail">
                 <?php echo $pro['introduce'] ?>
             </div>
@@ -136,9 +136,9 @@
             <div class="detail">
                 <?php echo $pro['tips'] ?>
             </div>
-            <div class="picture1">
+            <!-- <div class="picture1">
                 <img src="./assets/./pic/./pic_chitietsp/intro3.png" alt="intro3" >
-            </div>
+            </div> -->
            
             <?php } ?>
 

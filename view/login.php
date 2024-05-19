@@ -14,7 +14,7 @@
                 <i class="fa-solid fa-eye"></i>
                 </div>
             </div>
-            <button type="submit" name="login">ĐĂNG NHẬP</button>
+            <button type="submit" name="login_btn">ĐĂNG NHẬP</button>
         </form>
     </div>
 </div>

@@ -1,0 +1,70 @@
+<?php
+// session_start();
+require_once('../connection.php');
+require_once('../helper.php');
+
+    if(isset($_POST['register_btn'])){
+       var_dump($_POST);
+        $name= mysqli_real_escape_string($con,$_POST['name']);
+        $email= mysqli_real_escape_string($con,$_POST['email']);
+        $phone= mysqli_real_escape_string($con,$_POST['phone']);
+        $password= mysqli_real_escape_string($con,$_POST['password']);
+        $cpassword= mysqli_real_escape_string($con,$_POST['cpassword']);
+        // check if email already registered
+        $check_email_query="SELECT email FROM customers WHERE email='$email'";
+        $check_email_query_run=mysqli_query($con,$check_email_query );
+        if( mysqli_num_rows( $check_email_query_run)>0)
+        {
+            $_SESSION['message']="Email already registered";
+            header('Location: ../register.php');
+        }
+        else
+        {
+            if($password== $cpassword)
+            {
+                $insert_query="INSERT INTO customers (name,email,phone,password) VALUES('$name','$email','$phone','$password')";
+                $insert_query_run= mysqli_query($con, $insert_query );
+                if($insert_query_run){
+                    $_SESSION['message']="Registered Successfullly";
+                    header('Location: ../login.php');
+                }
+                else{
+                    $_SESSION['message']="Something went wrong";
+                    header('Location: ../register.php');
+                }
+            }
+            else{
+                $_SESSION['message']="Password do not match";
+                header('Location: ../register.php');
+            }
+        }
+    }
+    else if(isset($_POST['login_btn']))
+    {
+        $email = mysqli_real_escape_string($con,$_POST['email']);
+        $password = mysqli_real_escape_string($con,$_POST['password']);
+
+        $login_query= "SELECT * FROM customers WHERE email='$email' AND password='$password'";
+        $login_query_run= mysqli_query($con,$login_query);
+
+        if(mysqli_num_rows($login_query_run) > 0 )
+        {
+            $_SESSION['auth_customer'] = true;
+
+            $userdata = mysqli_fetch_array($login_query_run);
+
+            $username= $userdata['name']; 
+            $useremail= $userdata['email'];
+            $_SESSION['auth_customer_user']=[
+                'name'=> $username,
+                'email' => $useremail
+            ];
+        }
+        else
+        {
+            // redirect("../login.php","Invalid Creadentials");
+
+        }
+    }
+   
+?>

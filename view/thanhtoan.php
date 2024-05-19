@@ -128,16 +128,6 @@
                     
                 </div>
             </div>
-          
-            <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                document.getElementById("orderButton").addEventListener("click", function() {
-                    alert("Bạn đã đặt hàng thành công!");
-                });
-            });
-           
-            </script>
-
         </div>
     </div>
     <hr style="width: 100%; margin-top: 20px;">

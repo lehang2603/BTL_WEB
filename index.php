@@ -13,7 +13,7 @@ include "./view/incl/header.php";
             case 'login' :
                 include "./view/login.php";break;
             case 'register' :
-                include "./view/register.php";break;          
+                include "./view/register.php";break;
             case 'lienhe' :
                 include "./view/lienhe.php";break;  
             case 'gioithieu':

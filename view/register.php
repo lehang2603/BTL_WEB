@@ -4,7 +4,7 @@
         <div class="wrapper">
             <div class="container">
                 <div class="row justify-space-around p-3 my-3">
-                    <form action="" class="ol-md-6" >
+                    <form action="/btl_web/auth/register.php" class="ol-md-6" method="POST" >
                         <h1 class="text-center h3 py-3">ĐĂNG KÍ TÀI KHOẢN</h1>
                         <div class="form-group">
                             <label for="surname">*Họ và tên</label>
@@ -12,7 +12,7 @@
                         </div>
                        
                         <div class="form-group">
-<label for="email">*Email</label>
+                            <label for="email">*Email</label>
                             <input type="text" name="email" id="" class="form-control" placeholder="Nhập email" required>
                         </div>
                         <div class="form-group">
@@ -27,8 +27,7 @@
                             <label for="mk">*Nhập lại mật khẩu</label>
                             <input type="password" name="mk" id="" class="form-control"  placeholder="Nhập lại mật khẩu" required>
                         </div>
-                        <button type="submit">ĐĂNG KÍ</button>
-                        <!-- <input type="submit" value="ĐĂNG KÍ" class="btn primary btn btn-block"> -->
+                        <button type="submit" name="register_btn">ĐĂNG KÍ</button>
                     </form>
                 </div>
             </div>

@@ -18,7 +18,14 @@
                     <h1>BẠN CẦN HỖ TRỢ ?</h1>
                     <a>Leaves rất hân hạnh được hỗ trợ bạn, hãy để lại thông tin cho chúng tôi nhé. Yêu cầu của bạn sẽ được xử lý và phản hồi trong thời gian sớm nhất.</a><br>
                 </div>
-                <form action="text-left">
+                <?php
+                    session_start();
+                    if (isset($_SESSION['message'])) {
+                        echo '<div class="alert alert-warning">' . $_SESSION['message'] . '</div>';
+                        unset($_SESSION['message']);
+                    }
+                    ?>
+                <form action="process_contact.php" method="POST" >
                     <div class="form-group row">
                         <div class="col-sm-6">
                             <label for="fullname" class="col-form-label">*Họ và tên</label>

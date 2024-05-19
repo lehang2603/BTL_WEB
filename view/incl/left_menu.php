@@ -5,7 +5,7 @@
             <li> <a href="index.php?act=category&category_id=3" >body care</a></li>
             <li> <a href="index.php?act=category&category_id=2" > skin care</a></li>
             <li ><a href="index.php?act=category&category_id=4" >gift set </a></li>
-            <li ><a href="index.php?act=category&category_id=4" >sale </a></li>
+            
         </ul>
     </div>
 </div>

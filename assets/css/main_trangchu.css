@@ -91,11 +91,11 @@
 }
 #wrapper h2{
     font-size: 35px;
-    color: #D79BA1;
+    color:black;
     padding: 20px 20px;
     text-transform: uppercase;
     display: inline-block;
-    font-family: "Just Another Hand", cursive;
+    
      font-weight: 400;
     font-style: normal;
 }

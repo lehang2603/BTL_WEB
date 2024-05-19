@@ -34,7 +34,7 @@
                             <li> <a href="index.php?act=category&category_id=3" >BODY CARE</a></li>
                             <li> <a href="index.php?act=category&category_id=2" > SKIN CARE</a></li>
                             <li ><a href="index.php?act=category&category_id=4" >GIFT SET</a></li>
-                            <li ><a href="" >SALE</a></li>
+                           
                         </ul>
                     </div>
                    </div>

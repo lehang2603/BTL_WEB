@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/./css/chinhsach.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css">
 
+
  
     <!-- <link rel="stylesheet" href="./assets/./css/./chitietsp.css"> -->
    
@@ -53,9 +54,9 @@
                     </div>
         
                     <div class="header-search">
-                        <form action="/BTL_WEB/index.php" class="header-search-box">
-                            <input type="hidden" name="act" value="timkiem" >
-                            <input type="text" name="keyword" class="search-control" placeholder="Tìm kiếm sản phẩm">
+                        <form class="header-search-box">
+                       
+                        <input type="text" class="search-control" placeholder="Tìm kiếm sản phẩm"  >
                             <button type="submit" class="search-btn">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>

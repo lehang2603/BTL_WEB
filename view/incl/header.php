@@ -54,9 +54,9 @@
                     </div>
         
                     <div class="header-search">
-                        <form class="header-search-box">
-                       
-                        <input type="text" class="search-control" placeholder="Tìm kiếm sản phẩm"  >
+                        <form action="./index.php" class="header-search-box">
+                        <input type="hidden" name="act" value="timkiem">
+                        <input type="text" name="keyword" class="search-control" placeholder="Tìm kiếm sản phẩm"  >
                             <button type="submit" class="search-btn">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
@@ -65,98 +65,57 @@
                         </form>
                     </div>
         
-                    <!-- <div class="header-user">
+                 
+                    <div class="header-user">
                         <div class="header-user-icon">
                             <i class="fa-regular fa-circle-user"></i>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                            </ul>
                         </div>
         
                         <div class="header-user-control">
-                            <a href="index.php?act=login" class="header-sign-in">Đăng nhập</a> / 
+                            <a href="index.php?act=login" class="header-sign-in">Đăng nhập</a> /
                             <a href="index.php?act=register" class="header-sign-up">Đăng ký</a>
-                        </div> 
-                    </div> -->
-                    <div class="header-user">
-                        <div class="header-user-icon" id="userIcon">
-                            <i class="fa-regular fa-circle-user"></i>
                         </div>
-                        <ul class="dropdown-menu" id="dropdownMenu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="index.php?act=login">Đăng nhập</a></li>
-                            <li><a class="dropdown-item" href="index.php?act=register">Đăng ký</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="view/logout.php">Đăng xuất</a></li>
-                        </ul>
                     </div>
-                    
-                <script>
-                    document.getElementById('userIcon').addEventListener('click', function() {
-                        document.getElementById('dropdownMenu').classList.toggle('show');
-                    });
-
-                    // Đóng menu khi nhấp ra ngoài
-                    window.addEventListener('click', function(e) {
-                        if (!document.getElementById('userIcon').contains(e.target) && 
-                            !document.getElementById('dropdownMenu').contains(e.target)) {
-                            document.getElementById('dropdownMenu').classList.remove('show');
-                        }
-                    });
-                </script>
-
-        
-                    <!-- <div class="header-mini-cart">
-                        <div class="header_cart-wrap">
-                            <a href="index.php?act=giohang"><i class="fa-solid fa-bag-shopping"></i></a>
-                        </div>
-                      
-                    </div> -->
-                     <div class="header-mini-cart">
-                        <div class="header-cart">
-                            <div class="icon-cart">
-                                <svg aria-hidden="true" xmlns="fa-solid fa-bag-shopping" fill="none" viewBox="0 0 18 20">
+             
+                    <div class="header-mini-cart">
+                            <div class="header-cart">
+                                <div class="icon-cart" id="iconCart">
                                     <i class="fa-solid fa-bag-shopping"></i>
-                                   
-                                </svg>
-                               
-                                
+                                </div>
                             </div>
-                            
-                        </div >
-                    <div class="listProduct"></div>
-                        <div class="cartTab">
-                            <h1>Cart</h1>
-                            <div id="listCart" class="listCart">
-                                <?php include './cart_content.php'; ?>
-                            </div>
-                            <div class="btn">
-                                
-                                <button class="close">Close</button>
-                                <button>Checkout</button>
+                            <div class="cartTab" id="cartTab">
+                                <h1>Cart</h1>
+                                <div id="listCart" class="listCart">
+                                    <?php include './cart_content.php'; ?>
+                                </div>
+                                <div class="btn">
+                                    <button class="close" id="closeCartBtn">Close</button>
+                                    <button>Checkout</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                     <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                    const iconCart = document.querySelector('.icon-cart');
-                    const listCart = document.querySelector('.listCart');
-                    const cartTab = document.querySelector('.cartTab');
-                    const closeCartBtn = document.querySelector('.close');
+                        <script>
+                            document.getElementById('userIcon').addEventListener('click', function() {
+                                document.getElementById('dropdownMenu').classList.toggle('show');
+                            });
 
-                    iconCart.addEventListener('click', function () {
-                        document.body.classList.toggle('showCart');
-                    });
-                    closeCartBtn.addEventListener('click', function () {
-                        document.body.classList.remove('showCart');
-                    });
-                 
+                            window.addEventListener('click', function(e) {
+                                if (!document.getElementById('userIcon').contains(e.target) && 
+                                    !document.getElementById('dropdownMenu').contains(e.target)) {
+                                    document.getElementById('dropdownMenu').classList.remove('show');
+                                }
+                            });
+
+                            document.getElementById('iconCart').addEventListener('click', function () {
+                                document.body.classList.toggle('showCart');
+                            });
+
+                            document.getElementById('closeCartBtn').addEventListener('click', function () {
+                                document.body.classList.remove('showCart');
+                            });
+                        </script>
+                    
                    
-                });
-    </script>        
                     </div>
                 </div>
 
@@ -201,4 +160,5 @@
 
         </div>
         </header>
+       
         

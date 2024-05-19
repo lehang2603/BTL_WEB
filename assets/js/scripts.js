@@ -10,6 +10,7 @@ function addToCart(itemId, quantity) {
     .then(data => {
         if (data.status === 'success') {
             document.getElementById('listCart').innerHTML = data.cart_html;
+            document.body.classList.toggle('showCart');
         } else {
             alert('Có lỗi xảy ra.');
         }

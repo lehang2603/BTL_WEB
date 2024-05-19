@@ -78,7 +78,7 @@
                             <button class="decrement">-</button>
                             <button class="counter">1</button>
                             <button class="increment">+</button>
-                            <p>Còn lại <?php echo $pro['quantity'] ?> sản phẩm trong kho</p>
+                            
                         </div>
 
                         <script>
@@ -101,7 +101,7 @@
                             });
                         </script>
                         <div class="btn-box">
-                            <button class="cart-btn">Add to Cart</button>
+                            <button class="cart-btn add-to-cart"  name="add_to_cart" onclick="addToCart(<?php echo $product['id'] ?>, 1)">Add to Cart</button>
                             <button class="buy-btn">Buy Now</button>
                             </div>
                     </div>

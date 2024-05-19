@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 if(isset($_SESSION['auth_customer']))
 {
@@ -7,4 +7,4 @@ if(isset($_SESSION['auth_customer']))
     $_SESSION['message']="dang xuat thanh cong!!";
 }
 header('Location : ../view/trangchu.php ')
-?>
+?> -->

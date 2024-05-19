@@ -2,6 +2,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #D79BA1; /* Đổi màu nền theo ý muốn */
+    z-index: 999; /* Đảm bảo header hiển thị trên các phần tử khác */
+    transition: top 0.3s; /* Thêm hiệu ứng di chuyển khi cuộn trang */
+}
+
+body.scrolled-down .header {
+    top: -30px; /* Điều chỉnh chiều cao của header khi cuộn trang xuống */
 }
 
 body {

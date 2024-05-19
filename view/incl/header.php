@@ -35,6 +35,7 @@
 </head>
 
 <body>
+
     <header>
     <div class="warpper">
         <div class="header-group">
@@ -60,16 +61,48 @@
                         </form>
                     </div>
         
-                    <div class="header-user">
+                    <!-- <div class="header-user">
                         <div class="header-user-icon">
                             <i class="fa-regular fa-circle-user"></i>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                            </ul>
                         </div>
         
                         <div class="header-user-control">
                             <a href="index.php?act=login" class="header-sign-in">Đăng nhập</a> / 
                             <a href="index.php?act=register" class="header-sign-up">Đăng ký</a>
+                        </div> 
+                    </div> -->
+                    <div class="header-user">
+                        <div class="header-user-icon" id="userIcon">
+                            <i class="fa-regular fa-circle-user"></i>
                         </div>
+                        <ul class="dropdown-menu" id="dropdownMenu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.php?act=login">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="index.php?act=register">Đăng ký</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="view/logout.php">Đăng xuất</a></li>
+                        </ul>
                     </div>
+                    
+                <script>
+                    document.getElementById('userIcon').addEventListener('click', function() {
+                        document.getElementById('dropdownMenu').classList.toggle('show');
+                    });
+
+                    // Đóng menu khi nhấp ra ngoài
+                    window.addEventListener('click', function(e) {
+                        if (!document.getElementById('userIcon').contains(e.target) && 
+                            !document.getElementById('dropdownMenu').contains(e.target)) {
+                            document.getElementById('dropdownMenu').classList.remove('show');
+                        }
+                    });
+                </script>
+
         
                     <!-- <div class="header-mini-cart">
                         <div class="header_cart-wrap">

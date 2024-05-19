@@ -106,7 +106,7 @@
                             <a href="" class="product-name" title="<?php echo $product['name'] ?>"><?php echo $product['name'] ?></a>
                             <div class="product-price"><?php echo Helper::currency_format($product['selling_price'])?>
                                 <div class="product-action">
-                                    <button class="add-to-cart" onclick="themvaogiohang(this)">
+                                    <button class="add-to-cart" onclick="addToCart(<?php echo $product['id'] ?>, 1)">
                                         <i class="fas fa-shopping-cart"></i>
                                     </button>
                                 </div>
@@ -114,12 +114,6 @@
                          </div>
                     </div>
                 </div>
-                <script>
-                    function themvaogiohang(x){
-                        var product=x.parentElement.children;
-                        alert(product[1].children[1].innerText);
-                    }
-                </script>
             <?php } ?>
             
         </div>    

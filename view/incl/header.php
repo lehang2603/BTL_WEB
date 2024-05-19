@@ -53,9 +53,9 @@
                     </div>
         
                     <div class="header-search">
-                        <form class="header-search-box">
-                       
-                        <input type="text" class="search-control" placeholder="Tìm kiếm sản phẩm"  >
+                        <form action="/BTL_WEB/index.php" class="header-search-box">
+                            <input type="hidden" name="act" value="timkiem" >
+                            <input type="text" name="keyword" class="search-control" placeholder="Tìm kiếm sản phẩm">
                             <button type="submit" class="search-btn">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>

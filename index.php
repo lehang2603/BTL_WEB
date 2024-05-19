@@ -31,8 +31,9 @@ include "./view/incl/header.php";
             case 'vanchuyen':
                 include "./view/chinhsach/vanchuyen.php";break; 
             case 'muahang':
-                include "./view/chinhsach/muahang.php";break;     
-                              
+                include "./view/chinhsach/muahang.php";break;
+            case 'timkiem':
+                include "./view/timkiem.php";break;
             
                 
             default:

@@ -182,7 +182,9 @@
             <div class="header-bottom">
                 <div class="header-bottom-main">
                     <div class="header-logo">
-                        <img src="./assets/logo.png" alt="">
+                        <a href="/index.php?act=trangchu">
+                            <img src="./assets/logo.png" alt="">
+                        </a>
                     </div>
         
                     <div class="header-menu">

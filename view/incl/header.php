@@ -54,10 +54,13 @@
         
                     <div class="header-search">
                         <form class="header-search-box">
-                            <input type="text" class="search-control" placeholder="Tìm kiếm sản phẩm">
+                       
+                        <input type="text" class="search-control" placeholder="Tìm kiếm sản phẩm"  >
                             <button type="submit" class="search-btn">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
+                      
+                           
                         </form>
                     </div>
         

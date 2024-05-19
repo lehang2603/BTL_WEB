@@ -126,7 +126,9 @@
                     <div class="listProduct"></div>
                         <div class="cartTab">
                             <h1>Cart</h1>
-                            <div class="listCart"></div>
+                            <div id="listCart" class="listCart">
+                                <?php include './cart_content.php'; ?>
+                            </div>
                             <div class="btn">
                                 
                                 <button class="close">Close</button>
@@ -142,66 +144,8 @@
                     const cartTab = document.querySelector('.cartTab');
                     const closeCartBtn = document.querySelector('.close');
 
-                    const products = [
-                        {
-                            name: "Phấn Mắt Dior Backstage Eye Palette 10g",
-                            price: 750000,
-                            image: "./assets/pic/pic_slide/pic_1.jpg",
-                           
-                        },
-                        
-                        {
-                            name: "Product 2",
-                            price: 150000,
-                            image: "./assets/pic/pic_slide/pic_2.jpg",
-                           
-                        }
-                    ];
-                    function updateCart() {
-                    listCart.innerHTML = '';
-                    products.forEach(product => {
-                        const item = document.createElement('div');
-                        item.classList.add('item');
-                        item.innerHTML = `
-                            <img src="${product.image}" alt="${product.name}">
-                            <div>${product.name}</div>
-                            <div>${product.price}đ</div>
-                            <div class="add-dese">
-                                <button class="decrement">-</button>
-                                <span class="counter">1</span>
-                                <button class="increment">+</button>
-                            </div>
-                            
-                          
-                        `;
-                        listCart.appendChild(item);
-                    });
-                    const decrementButtons = document.querySelectorAll('.decrement');
-                    const incrementButtons = document.querySelectorAll('.increment');
-
-                    decrementButtons.forEach(button => {
-                        button.addEventListener('click', function() {
-                            let counter = button.nextElementSibling;
-                            let currentValue = parseInt(counter.textContent);
-                            if (currentValue > 1) {
-                                counter.textContent = currentValue - 1;
-                            }
-                        });
-                    });
-                    incrementButtons.forEach(button => {
-                        button.addEventListener('click', function() {
-                            let counter = button.previousElementSibling;
-                            let currentValue = parseInt(counter.textContent);
-                            counter.textContent = currentValue + 1;
-                        });
-                    });
-
-                   
-                    }
-
                     iconCart.addEventListener('click', function () {
                         document.body.classList.toggle('showCart');
-                        updateCart();
                     });
                     closeCartBtn.addEventListener('click', function () {
                         document.body.classList.remove('showCart');

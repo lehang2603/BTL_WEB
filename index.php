@@ -1,4 +1,9 @@
 <?php
+
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+}
+
 require_once('./model/products.php'); 
 include "./view/incl/header.php";
 
